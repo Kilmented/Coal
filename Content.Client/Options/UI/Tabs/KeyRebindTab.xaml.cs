@@ -190,6 +190,11 @@ namespace Content.Client.Options.UI.Tabs
             AddHeader("ui-options-header-general");
             AddCheckBox("ui-options-hotkey-keymap", _cfg.GetCVar(CVars.DisplayUSQWERTYHotkeys), HandleToggleUSQWERTYCheckbox);
 
+            // ES START
+            AddHeader("ui-options-header-es");
+            AddButton(ContentKeyFunctions.ESHoldToFace);
+            // ES END
+
             AddHeader("ui-options-header-movement");
             AddButton(EngineKeyFunctions.MoveUp);
             AddButton(EngineKeyFunctions.MoveLeft);
@@ -198,9 +203,6 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(EngineKeyFunctions.Walk);
             AddCheckBox("ui-options-hotkey-toggle-walk", _cfg.GetCVar(CCVars.ToggleWalk), HandleToggleWalk);
             InitToggleWalk();
-            // ES START
-            AddButton(ContentKeyFunctions.ESHoldToFace);
-            // ES END
 
             AddHeader("ui-options-header-camera");
             AddButton(EngineKeyFunctions.CameraRotateLeft);
