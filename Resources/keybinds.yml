@@ -1,4 +1,4 @@
-﻿version: 1 # Not used right now, whatever.
+version: 1 # Not used right now, whatever.
 binds:
 # ES START
 - function: ESHoldToFace
@@ -51,6 +51,9 @@ binds:
 # ES START
   key: Space
 # ES END
+- function: ToggleFocus # Mono
+  type: State
+  key: Space
 # Shuttle
 - function: ShuttleStrafeUp
   type: State

@@ -75,6 +75,8 @@ namespace Content.Shared.Input
         public static readonly BoundKeyFunction OpenLanguageMenu = "OpenLanguageMenu";
         // RMC14
 
+        public static readonly BoundKeyFunction ToggleFocus = "ToggleFocus"; // Mono
+
         public static readonly BoundKeyFunction ArcadeUp = "ArcadeUp";
         public static readonly BoundKeyFunction ArcadeDown = "ArcadeDown";
         public static readonly BoundKeyFunction ArcadeLeft = "ArcadeLeft";
