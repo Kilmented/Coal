@@ -176,6 +176,7 @@
     - Airlocks
     - WirePanels
     - Networking
+  - type: ESEmergencyAccessDoor # ES
   placement:
     mode: SnapgridCenter
 
