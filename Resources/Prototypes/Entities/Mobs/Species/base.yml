@@ -2,7 +2,6 @@
   save: false
   parent:
   - BaseMob
-  - ESBaseMob # ES START
   - MobDamageable
   - MobPolymorphable
   - MobCombat
@@ -228,6 +227,9 @@
     - AnomalyHost
   - type: MobGibbedByExplosionType
   - type: RMCCanBeFultoned
+  - type: ESViewcone
+  - type: ESViewconeOccludable
+  - type: ESHoldToFace
 
 - type: entity
   save: false
