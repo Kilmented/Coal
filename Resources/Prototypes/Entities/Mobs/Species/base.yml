@@ -227,6 +227,9 @@
     - AnomalyHost
   - type: MobGibbedByExplosionType
   - type: RMCCanBeFultoned
+  - type: ESViewcone
+  - type: ESViewconeOccludable
+  - type: ESHoldToFace
 
 - type: entity
   save: false

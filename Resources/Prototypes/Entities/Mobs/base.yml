@@ -49,6 +49,7 @@
     active: False
   #CMU
   - type: CMUZPhysics
+  - type: ESViewconeOccludable
 
 - type: entity
   save: false

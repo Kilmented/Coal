@@ -48,6 +48,9 @@
   - type: RMCMesonsNonviewable
   #CMU
   - type: CMUZPhysics
+  # ES START
+  - type: ESViewconeOccludable
+  # ES END
 
 - type: entity
   name: "storage item"
