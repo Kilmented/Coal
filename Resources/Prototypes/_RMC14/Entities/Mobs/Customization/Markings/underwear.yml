@@ -273,3 +273,15 @@
   sprites:
   - sprite: _RMC14/Mobs/Customization/underwear.rsi
     state: urban_tanga
+
+# Wicce: Other
+- type: marking
+  id: WicceUnderwearNone
+  bodyPart: UndergarmentBottom
+  markingCategory: UndergarmentBottom
+  forcedColoring: true
+  RMCFollowSkinColor: false
+  speciesRestriction: [Human, Dwarf, Felinid, Arachnid, Reptilian, Diona, Moth, SlimePerson, Avali, Vulpkanin, Rodentia, Feroxi, Skrell]
+  sprites:
+  - sprite: _RMC14/Mobs/Customization/undershirt.rsi
+    state: blank

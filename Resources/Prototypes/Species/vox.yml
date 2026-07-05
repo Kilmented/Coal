@@ -1,7 +1,7 @@
 - type: species
   id: Vox
   name: species-name-vox
-  roundStart: false # sad
+  roundStart: true # Wicce: this is a server for furries.
   prototype: CMMobVox
   sprites: MobVoxSprites
   markingLimits: MobVoxMarkingLimits

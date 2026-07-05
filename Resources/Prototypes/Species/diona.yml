@@ -1,7 +1,7 @@
 - type: species
   id: Diona
   name: species-name-diona
-  roundStart: false
+  roundStart: true # Wicce: this is a server for furries.
   prototype: CMMobDiona
   sprites: MobDionaSprites
   defaultSkinTone: "#cdb369"

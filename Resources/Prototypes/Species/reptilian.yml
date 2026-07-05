@@ -1,7 +1,7 @@
 - type: species
   id: Reptilian
   name: species-name-reptilian
-  roundStart: false
+  roundStart: true # Wicce: this is a server for furries.
   prototype: CMMobReptilian
   sprites: MobReptilianSprites
   defaultSkinTone: "#34a223"
