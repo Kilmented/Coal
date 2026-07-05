@@ -1,7 +1,7 @@
 - type: species
   id: Rodentia
   name: species-name-rodentia
-  roundStart: false
+  roundStart: true # Wicce: this is a server for furries.
   prototype: CMMobRodentia
   sprites: MobRodentiaSprites
   defaultSkinTone: "#747474"

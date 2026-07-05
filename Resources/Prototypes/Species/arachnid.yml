@@ -1,7 +1,7 @@
 - type: species
   id: Arachnid
   name: species-name-arachnid
-  roundStart: false
+  roundStart: true # Wicce: this is a server for furries.
   prototype: CMMobArachnid
   sprites: MobArachnidSprites
   defaultSkinTone: "#385878"
