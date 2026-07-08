@@ -1,0 +1,298 @@
+﻿- type: entity
+  parent: CMWallMetal
+  id: WicceWallMining
+  name: wall
+  suffix: mining
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/mining.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/mining.rsi
+    state: mining
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: mining
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  parent: CMWallMetal
+  id: WicceWallMiningB
+  name: wall
+  suffix: mining, faded
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/mining.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/mining.rsi
+    state: miningB
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: miningB
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  parent: CMWallMetal
+  id: WicceWallSolid
+  name: wall
+  suffix: solid
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/solid.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/solid.rsi
+    state: solid
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solid
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  parent: CMWallMetal
+  id: WicceWallSolidRusted
+  suffix: "solid, rusted"
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/solid_rust.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/solid_rust.rsi
+    state: solid
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solid
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+
+- type: entity
+  parent: CMWallMetal
+  id: WicceWallReinforced
+  name: wall
+  suffix: reinforced
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/solid.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/solid.rsi
+    state: reinf
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: reinf
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  parent: CMWallMetal
+  id: WicceWallReinforcedRusted
+  suffix: "reinforced, rusted"
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/solid_rust.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/solid_rust.rsi
+    state: reinf
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: reinf
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  parent: CMWallMetal
+  id: WicceWallSolidColony
+  name: wall
+  suffix: "solid, colony"
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/colony.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/colony.rsi
+    state: solid
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solid
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
+  parent: CMWallMetal
+  id: WicceWallReinforcedColony
+  suffix: "reinforced, colony"
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/colony.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/colony.rsi
+    state: reinf
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: reinf
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
