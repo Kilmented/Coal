@@ -697,7 +697,7 @@ public sealed partial class VehicleSystem : EntitySystem
 
         if (ent.Comp.Vehicle.IsValid())
             UnregisterTrackedOccupant(ent.Comp.Vehicle, ent.Owner, ent.Comp.IsXeno);
-        // Wicce: constrict viewcone so half your screen isn't covered
+        // Wicce: constrict viewcone so half your screen is covered
         if (TryComp<ESViewconeComponent>(ent.Owner, out var viewcone))
         {
             viewcone.ConeAngle -= 365f;
