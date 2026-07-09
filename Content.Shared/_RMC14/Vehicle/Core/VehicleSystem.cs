@@ -1,5 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+using Content.Shared._ES.Viewcone;
 using Content.Shared._RMC14.Areas;
 using Content.Shared._RMC14.Construction;
 using Content.Shared._RMC14.Marines.Skills;
@@ -681,6 +682,13 @@ public sealed partial class VehicleSystem : EntitySystem
     private void OnOccupantStartup(Entity<VehicleInteriorOccupantComponent> ent, ref ComponentStartup args)
     {
         _meta.AddFlag(ent, MetaDataFlags.ExtraTransformEvents);
+
+        // Wicce: dilate viewcone so half your screen isn't covered
+        if (TryComp<ESViewconeComponent>(ent.Owner, out var viewcone))
+        {
+            viewcone.ConeAngle += 365f;
+            Dirty(ent.Owner, viewcone);
+        }
     }
 
     private void OnOccupantRemove(Entity<VehicleInteriorOccupantComponent> ent, ref ComponentRemove args)
@@ -689,6 +697,12 @@ public sealed partial class VehicleSystem : EntitySystem
 
         if (ent.Comp.Vehicle.IsValid())
             UnregisterTrackedOccupant(ent.Comp.Vehicle, ent.Owner, ent.Comp.IsXeno);
+        // Wicce: constrict viewcone so half your screen is covered
+        if (TryComp<ESViewconeComponent>(ent.Owner, out var viewcone))
+        {
+            viewcone.ConeAngle -= 365f;
+            Dirty(ent.Owner, viewcone);
+        }
     }
 
     private void OnOccupantMapChanged(Entity<VehicleInteriorOccupantComponent> ent, ref MapUidChangedEvent args)
