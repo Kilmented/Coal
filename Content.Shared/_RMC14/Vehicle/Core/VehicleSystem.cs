@@ -684,9 +684,8 @@ public sealed partial class VehicleSystem : EntitySystem
         _meta.AddFlag(ent, MetaDataFlags.ExtraTransformEvents);
 
         // Wicce: dilate viewcone so half your screen isn't covered
-        HasComp<ESViewconeComponent>(ent.Owner);
+        if (TryComp<ESViewconeComponent>(ent.Owner, out var viewcone))
         {
-            var viewcone = Comp<ESViewconeComponent>(ent.Owner);
             viewcone.ConeAngle += 365f;
             Dirty(ent.Owner, viewcone);
         }
@@ -699,9 +698,8 @@ public sealed partial class VehicleSystem : EntitySystem
         if (ent.Comp.Vehicle.IsValid())
             UnregisterTrackedOccupant(ent.Comp.Vehicle, ent.Owner, ent.Comp.IsXeno);
         // Wicce: constrict viewcone so half your screen isn't covered
-        HasComp<ESViewconeComponent>(ent.Owner);
+        if (TryComp<ESViewconeComponent>(ent.Owner, out var viewcone))
         {
-            var viewcone = Comp<ESViewconeComponent>(ent.Owner);
             viewcone.ConeAngle -= 365f;
             Dirty(ent.Owner, viewcone);
         }
