@@ -1,0 +1,52 @@
+﻿- type: entity
+  id: WicceReinforcedWindow
+  name: reinforced window
+  parent: ReinforcedWindow
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _Wicce/Structures/Windows/reinforced_window.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Windows/reinforced_window.rsi
+
+- type: entity
+  id: WicceWindowReinforcedDirectional
+  parent: WindowReinforcedDirectional
+  name: directional reinforced window
+  description: Don't smudge up the glass down there.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Windows/directional.rsi
+    state: reinforced_window
+  - type: Icon
+    sprite: _Wicce/Structures/Windows/directional.rsi
+    state: reinforced_window
+
+- type: entity
+  id: WicceWindow
+  parent: Window
+  name: window
+  description: Don't smudge up the glass down there.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Windows/window.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Windows/window.rsi
+    state: full
+
+- type: entity
+  id: WicceWindowDirectional
+  parent: WindowDirectional
+  name: directional window
+  description: Don't smudge up the glass down there.
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Window
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Windows/directional.rsi
+    state: window
+  - type: Icon
+    sprite: _Wicce/Structures/Windows/directional.rsi
+    state: window
