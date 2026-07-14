@@ -298,6 +298,42 @@
         acts: ["Breakage"]
 
 - type: entity
+  parent: CMWallMetal
+  id: WicceWallReinforcedOnestar
+  suffix: "reinforced, onestar"
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/onestar.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/onestar.rsi
+    state: reinf
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: reinf
+  - type: Damageable
+    damageContainer: StructuralMarine
+    damageModifierSet: CMU14StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+
+- type: entity
   parent: RMCBaseWindowFrame
   id: WicceWallHalf
   abstract: false

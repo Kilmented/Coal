@@ -1,0 +1,81 @@
+{
+    "version": 1,
+    "license": null,
+    "copyright": null,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "onestar_standard0",
+            "directions": 4
+        },
+        {
+            "name": "onestar_standard1",
+            "directions": 4
+        },
+        {
+            "name": "onestar_standard2",
+            "directions": 4
+        },
+        {
+            "name": "onestar_standard3",
+            "directions": 4
+        },
+        {
+            "name": "onestar_standard4",
+            "directions": 4
+        },
+        {
+            "name": "onestar_standard5",
+            "directions": 4
+        },
+        {
+            "name": "onestar_standard6",
+            "directions": 4
+        },
+        {
+            "name": "onestar_standard7",
+            "directions": 4
+        },
+        {
+            "name": "onestar_standard"
+        },
+        {
+            "name": "onestar_reinforced0",
+            "directions": 4
+        },
+        {
+            "name": "onestar_reinforced1",
+            "directions": 4
+        },
+        {
+            "name": "onestar_reinforced2",
+            "directions": 4
+        },
+        {
+            "name": "onestar_reinforced3",
+            "directions": 4
+        },
+        {
+            "name": "onestar_reinforced4",
+            "directions": 4
+        },
+        {
+            "name": "onestar_reinforced5",
+            "directions": 4
+        },
+        {
+            "name": "onestar_reinforced6",
+            "directions": 4
+        },
+        {
+            "name": "onestar_reinforced7",
+            "directions": 4
+        },
+        {
+            "name": "onestar_reinforced"
+        }
+    ]
+}
