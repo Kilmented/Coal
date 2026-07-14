@@ -296,3 +296,23 @@
         node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
       - !type:DoActsBehavior
         acts: ["Breakage"]
+
+- type: entity
+  parent: RMCBaseWindowFrame
+  id: WicceWallHalf
+  abstract: false
+  name: wall
+  suffix: "solid, half"
+  description: A half-wall structure made of solid material.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/solid_half.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/solid_half.rsi
+    state: solid
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solid
