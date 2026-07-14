@@ -1,81 +1,81 @@
 {
     "version": 1,
-    "license": null,
-    "copyright": null,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "taken from at https://github.com/sojourn-13/sojourn-station/ at ff629ee56a00b1639dcd1e9d692bf41754f68390.",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "onestar_standard0",
+            "name": "solid0",
             "directions": 4
         },
         {
-            "name": "onestar_standard1",
+            "name": "solid1",
             "directions": 4
         },
         {
-            "name": "onestar_standard2",
+            "name": "solid2",
             "directions": 4
         },
         {
-            "name": "onestar_standard3",
+            "name": "solid3",
             "directions": 4
         },
         {
-            "name": "onestar_standard4",
+            "name": "solid4",
             "directions": 4
         },
         {
-            "name": "onestar_standard5",
+            "name": "solid5",
             "directions": 4
         },
         {
-            "name": "onestar_standard6",
+            "name": "solid6",
             "directions": 4
         },
         {
-            "name": "onestar_standard7",
+            "name": "solid7",
             "directions": 4
         },
         {
-            "name": "onestar_standard"
+            "name": "solid"
         },
         {
-            "name": "onestar_reinforced0",
+            "name": "reinf0",
             "directions": 4
         },
         {
-            "name": "onestar_reinforced1",
+            "name": "reinf1",
             "directions": 4
         },
         {
-            "name": "onestar_reinforced2",
+            "name": "reinf2",
             "directions": 4
         },
         {
-            "name": "onestar_reinforced3",
+            "name": "reinf3",
             "directions": 4
         },
         {
-            "name": "onestar_reinforced4",
+            "name": "reinf4",
             "directions": 4
         },
         {
-            "name": "onestar_reinforced5",
+            "name": "reinf5",
             "directions": 4
         },
         {
-            "name": "onestar_reinforced6",
+            "name": "reinf6",
             "directions": 4
         },
         {
-            "name": "onestar_reinforced7",
+            "name": "reinf7",
             "directions": 4
         },
         {
-            "name": "onestar_reinforced"
+            "name": "reinf"
         }
     ]
 }
