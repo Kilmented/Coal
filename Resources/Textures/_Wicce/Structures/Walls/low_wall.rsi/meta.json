@@ -1,0 +1,116 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "taken from at https://github.com/sojourn-13/sojourn-station/ at ff629ee56a00b1639dcd1e9d692bf41754f68390.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "metal0",
+            "directions": 4
+        },
+        {
+            "name": "metal1",
+            "directions": 4
+        },
+        {
+            "name": "metal2",
+            "directions": 4
+        },
+        {
+            "name": "metal3",
+            "directions": 4
+        },
+        {
+            "name": "metal4",
+            "directions": 4
+        },
+        {
+            "name": "metal5",
+            "directions": 4
+        },
+        {
+            "name": "metal6",
+            "directions": 4
+        },
+        {
+            "name": "metal7",
+            "directions": 4
+        },
+        {
+            "name": "metal"
+        },
+        {
+            "name": "onestar0",
+            "directions": 4
+        },
+        {
+            "name": "onestar1",
+            "directions": 4
+        },
+        {
+            "name": "onestar2",
+            "directions": 4
+        },
+        {
+            "name": "onestar3",
+            "directions": 4
+        },
+        {
+            "name": "onestar4",
+            "directions": 4
+        },
+        {
+            "name": "onestar5",
+            "directions": 4
+        },
+        {
+            "name": "onestar6",
+            "directions": 4
+        },
+        {
+            "name": "onestar7",
+            "directions": 4
+        },
+        {
+            "name": "onestar"
+        },
+        {
+            "name": "church0",
+            "directions": 4
+        },
+        {
+            "name": "church1",
+            "directions": 4
+        },
+        {
+            "name": "church2",
+            "directions": 4
+        },
+        {
+            "name": "church3",
+            "directions": 4
+        },
+        {
+            "name": "church4",
+            "directions": 4
+        },
+        {
+            "name": "church5",
+            "directions": 4
+        },
+        {
+            "name": "church6",
+            "directions": 4
+        },
+        {
+            "name": "church7",
+            "directions": 4
+        },
+        {
+            "name": "church"
+        }
+    ]
+}
