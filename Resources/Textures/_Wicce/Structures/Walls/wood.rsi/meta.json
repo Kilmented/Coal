@@ -1,7 +1,7 @@
 {
     "version": 1,
-    "license": null,
-    "copyright": null,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "taken from https://github.com/sojourn-13/sojourn-station/ at ff629ee56a00b1639dcd1e9d692bf41754f68390.",
     "size": {
         "x": 32,
         "y": 32
