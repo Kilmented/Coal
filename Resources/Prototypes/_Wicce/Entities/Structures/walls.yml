@@ -1,82 +1,6 @@
 ﻿- type: entity
   parent: CMWallMetal
-  id: WicceWallMining
-  name: wall
-  suffix: mining
-  description: A huge chunk of metal used to separate rooms.
-  components:
-  - type: Sprite
-    sprite: _Wicce/Structures/Walls/mining.rsi
-  - type: Icon
-    sprite: _Wicce/Structures/Walls/mining.rsi
-    state: mining
-  - type: IconSmooth
-    key: walls
-    additionalKeys:
-    - windows
-    - doors
-    base: mining
-  - type: Damageable
-    damageContainer: StructuralMarine
-    damageModifierSet: CMU14StructuralMarine
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
-      - !type:DoActsBehavior
-        acts: ["Breakage"]
-
-- type: entity
-  parent: CMWallMetal
-  id: WicceWallMiningB
-  name: wall
-  suffix: mining, faded
-  description: A huge chunk of metal used to separate rooms.
-  components:
-  - type: Sprite
-    sprite: _Wicce/Structures/Walls/mining.rsi
-  - type: Icon
-    sprite: _Wicce/Structures/Walls/mining.rsi
-    state: miningB
-  - type: IconSmooth
-    key: walls
-    additionalKeys:
-    - windows
-    - doors
-    base: miningB
-  - type: Damageable
-    damageContainer: StructuralMarine
-    damageModifierSet: CMU14StructuralMarine
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
-      - !type:DoActsBehavior
-        acts: ["Breakage"]
-
-- type: entity
-  parent: CMWallMetal
-  id: WicceWallSolid
+  id: WicceWall
   name: wall
   suffix: solid
   description: A huge chunk of metal used to separate rooms.
@@ -113,14 +37,16 @@
         acts: ["Breakage"]
 
 - type: entity
-  parent: CMWallMetal
-  id: WicceWallSolidRusted
-  suffix: "solid, rusted"
+  parent: WicceWall
+  id: WicceWallSterile
+  name: wall
+  suffix: Sterile
+  description: A huge chunk of metal used to separate rooms.
   components:
   - type: Sprite
-    sprite: _Wicce/Structures/Walls/solid_rust.rsi
+    sprite: _Wicce/Structures/Walls/sterile.rsi
   - type: Icon
-    sprite: _Wicce/Structures/Walls/solid_rust.rsi
+    sprite: _Wicce/Structures/Walls/sterile.rsi
     state: solid
   - type: IconSmooth
     key: walls
@@ -128,32 +54,88 @@
     - windows
     - doors
     base: solid
-  - type: Damageable
-    damageContainer: StructuralMarine
-    damageModifierSet: CMU14StructuralMarine
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
-      - !type:DoActsBehavior
-        acts: ["Breakage"]
 
+- type: entity
+  parent: WicceWall
+  id: WicceWallPlasteel
+  name: wall
+  suffix: Plasteel
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/plasteel.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/plasteel.rsi
+    state: solid
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solid
+
+- type: entity
+  parent: WicceWall
+  id: WicceWallChurch
+  name: wall
+  suffix: Church
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/church.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/church.rsi
+    state: solid
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solid
+
+- type: entity
+  parent: WicceWall
+  id: WicceWallOnestar
+  name: wall
+  suffix: Onestar
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/onestar.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/onestar.rsi
+    state: solid
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solid
+
+- type: entity
+  parent: WicceWall
+  id: WicceWallNashef
+  name: wall
+  suffix: Nashef
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/nashef.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/nashef.rsi
+    state: solid
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: solid
 
 - type: entity
   parent: CMWallMetal
   id: WicceWallReinforced
   name: wall
-  suffix: reinforced
+  suffix: Reinforced
   description: A huge chunk of metal used to separate rooms.
   components:
   - type: Sprite
@@ -188,88 +170,16 @@
         acts: ["Breakage"]
 
 - type: entity
-  parent: CMWallMetal
-  id: WicceWallReinforcedRusted
-  suffix: "reinforced, rusted"
-  components:
-  - type: Sprite
-    sprite: _Wicce/Structures/Walls/solid_rust.rsi
-  - type: Icon
-    sprite: _Wicce/Structures/Walls/solid_rust.rsi
-    state: reinf
-  - type: IconSmooth
-    key: walls
-    additionalKeys:
-    - windows
-    - doors
-    base: reinf
-  - type: Damageable
-    damageContainer: StructuralMarine
-    damageModifierSet: CMU14StructuralMarine
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
-      - !type:DoActsBehavior
-        acts: ["Breakage"]
-
-- type: entity
-  parent: CMWallMetal
-  id: WicceWallSolidColony
+  parent: WicceWallReinforced
+  id: WicceWallReinforcedSterile
   name: wall
-  suffix: "solid, colony"
+  suffix: "Sterile, Reinforced"
   description: A huge chunk of metal used to separate rooms.
   components:
   - type: Sprite
-    sprite: _Wicce/Structures/Walls/colony.rsi
+    sprite: _Wicce/Structures/Walls/sterile.rsi
   - type: Icon
-    sprite: _Wicce/Structures/Walls/colony.rsi
-    state: solid
-  - type: IconSmooth
-    key: walls
-    additionalKeys:
-    - windows
-    - doors
-    base: solid
-  - type: Damageable
-    damageContainer: StructuralMarine
-    damageModifierSet: CMU14StructuralMarine
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
-      - !type:DoActsBehavior
-        acts: ["Breakage"]
-
-- type: entity
-  parent: CMWallMetal
-  id: WicceWallReinforcedColony
-  suffix: "reinforced, colony"
-  components:
-  - type: Sprite
-    sprite: _Wicce/Structures/Walls/colony.rsi
-  - type: Icon
-    sprite: _Wicce/Structures/Walls/colony.rsi
+    sprite: _Wicce/Structures/Walls/sterile.rsi
     state: reinf
   - type: IconSmooth
     key: walls
@@ -277,42 +187,135 @@
     - windows
     - doors
     base: reinf
-  - type: Damageable
-    damageContainer: StructuralMarine
-    damageModifierSet: CMU14StructuralMarine
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 1125
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 1000
-      behaviors:
-      - !type:ChangeConstructionNodeBehavior
-        node: girder # This goes to the CM girder. We need a new one. But that's Later:tm:
-      - !type:DoActsBehavior
-        acts: ["Breakage"]
+
+- type: entity
+  parent: WicceWallReinforced
+  id: WicceWallReinforcedPlasteel
+  name: wall
+  suffix: "Plasteel, Reinforced"
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/plasteel.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/plasteel.rsi
+    state: reinf
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: reinf
+
+- type: entity
+  parent: WicceWallReinforced
+  id: WicceWallReinforcedOnestar
+  name: wall
+  suffix: "Onestar, Reinforced"
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/onestar.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/onestar.rsi
+    state: reinf
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: reinf
+
+- type: entity
+  parent: WicceWallReinforced
+  id: WicceWallReinforcedNashef
+  name: wall
+  suffix: "Nashef, Reinforced"
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/nashef.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/nashef.rsi
+    state: reinf
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: reinf
+
+- type: entity
+  parent: WicceWallReinforced
+  id: WicceWallReinforcedChurch
+  name: wall
+  suffix: "Church, Reinforced"
+  description: A huge chunk of metal used to separate rooms.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/church.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/church.rsi
+    state: reinf
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: reinf
 
 - type: entity
   parent: RMCBaseWindowFrame
   id: WicceWallHalf
   abstract: false
-  name: wall
-  suffix: "solid, half"
+  name: half-wall
+  suffix: Solid
   description: A half-wall structure made of solid material.
   components:
   - type: Sprite
-    sprite: _Wicce/Structures/Walls/solid_half.rsi
+    sprite: _Wicce/Structures/Walls/low_wall.rsi
   - type: Icon
-    sprite: _Wicce/Structures/Walls/solid_half.rsi
-    state: solid
+    sprite: _Wicce/Structures/Walls/low_wall.rsi
+    state: metal
   - type: IconSmooth
     key: walls
     additionalKeys:
     - windows
     - doors
-    base: solid
+    base: metal
+
+- type: entity
+  parent: WicceWallHalf
+  id: WicceWallHalfOnestar
+  suffix: Onestar
+  description: A half-wall structure made of solid material.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/low_wall.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/low_wall.rsi
+    state: onestar
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: onestar
+
+- type: entity
+  parent: WicceWallHalf
+  id: WicceWallHalfChurch
+  suffix: Church
+  description: A half-wall structure made of solid material.
+  components:
+  - type: Sprite
+    sprite: _Wicce/Structures/Walls/low_wall.rsi
+  - type: Icon
+    sprite: _Wicce/Structures/Walls/low_wall.rsi
+    state: church
+  - type: IconSmooth
+    key: walls
+    additionalKeys:
+    - windows
+    - doors
+    base: church

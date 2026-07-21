@@ -1,0 +1,81 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "taken from https://github.com/sojourn-13/sojourn-station/ at ff629ee56a00b1639dcd1e9d692bf41754f68390.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "wood"
+        },
+        {
+            "name": "wood0",
+            "directions": 4
+        },
+        {
+            "name": "wood1",
+            "directions": 4
+        },
+        {
+            "name": "wood2",
+            "directions": 4
+        },
+        {
+            "name": "wood3",
+            "directions": 4
+        },
+        {
+            "name": "wood4",
+            "directions": 4
+        },
+        {
+            "name": "wood5",
+            "directions": 4
+        },
+        {
+            "name": "wood6",
+            "directions": 4
+        },
+        {
+            "name": "wood7",
+            "directions": 4
+        },
+        {
+            "name": "oldwood"
+        },
+        {
+            "name": "oldwood0",
+            "directions": 4
+        },
+        {
+            "name": "oldwood1",
+            "directions": 4
+        },
+        {
+            "name": "oldwood2",
+            "directions": 4
+        },
+        {
+            "name": "oldwood3",
+            "directions": 4
+        },
+        {
+            "name": "oldwood4",
+            "directions": 4
+        },
+        {
+            "name": "oldwood5",
+            "directions": 4
+        },
+        {
+            "name": "oldwood6",
+            "directions": 4
+        },
+        {
+            "name": "oldwood7",
+            "directions": 4
+        }
+    ]
+}

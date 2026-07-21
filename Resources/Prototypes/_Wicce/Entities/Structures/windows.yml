@@ -39,10 +39,6 @@
   parent: WindowDirectional
   name: directional window
   description: Don't smudge up the glass down there.
-  placement:
-    mode: SnapgridCenter
-    snap:
-    - Window
   components:
   - type: Sprite
     sprite: _Wicce/Structures/Windows/directional.rsi
