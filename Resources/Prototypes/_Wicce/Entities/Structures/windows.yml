@@ -8,6 +8,9 @@
     sprite: _Wicce/Structures/Windows/reinforced_window.rsi
   - type: Icon
     sprite: _Wicce/Structures/Windows/reinforced_window.rsi
+  - type: IconSmooth
+    additionalKeys:
+    - walls
 
 - type: entity
   id: WicceWindowReinforcedDirectional
@@ -33,6 +36,9 @@
   - type: Icon
     sprite: _Wicce/Structures/Windows/window.rsi
     state: full
+  - type: IconSmooth
+    additionalKeys:
+    - walls
 
 - type: entity
   id: WicceWindowDirectional
